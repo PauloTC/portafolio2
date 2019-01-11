@@ -19,7 +19,10 @@ module.exports = {
       { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css?family=Open+Sans:300i,400|Raleway:700' }
     ]
   },
-
+  //gh-pages - Base URL
+  router: {
+    base: '/vuejs-2-series/'
+  },
   /*
   ** Customize the progress-bar color
   */
