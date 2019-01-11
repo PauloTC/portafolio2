@@ -97,7 +97,7 @@
                     .client_coment
                         p {{ client.description }}
                         span {{ client.name }},
-                            a(  :href="client.website" )  {{ client.website }}
+                            a(  :href="client.website" )  {{ client.industry }}
                     figure.client_image( style=" background-image: url('http://tinyimg.io/i/xXGHDqG.jpg')" )
         .contact_container.section_container( style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
             h3.general_title.purple    Ponte En Contacto
@@ -168,7 +168,7 @@ export default {
                     name: "A tiempo",
                     img:"https://i.ibb.co/7X3sjyt/time.png",
                     width: 100,
-                    description: " El valor de la puntualidad es muy importante a la entrega de un proyecto."
+                    description: " El valor de la puntualidad es muy importante en la entrega de un proyecto."
                 },
                 {
                     name: "Revisiones ilimitadas",
@@ -412,12 +412,14 @@ export default {
                     description: "Hasta ahora muy bueno. muy paciente y servicial Tiene muchas buenas ideas y hace las preguntas correctas.",
                     name: "Marcio Lizarbe",
                     website: "http://www.villaforestales.com",
+                    industry: 'Villa Forestales',
                     img: "http://tinyimg.io/i/xXGHDqG.jpg"
                 },
                 {
                     description: "Me había entregado el mejor trabajo que podría haber esperado con un proyecto complejo de desarrollo web en las últimas tecnologías, me aseguraré de contratar a su equipo y mantener la colaboración para futuros proyectos.",
-                    name: "Max Doe",
-                    website: "Envato.com",
+                    name: "StaffCreativa",
+                    website: "https://www.britanico.edu.pe/",
+                    industry: 'Britanico',
                     mg: "http://tinyimg.io/i/xXGHDqG.jpg"
                 }
             ]
