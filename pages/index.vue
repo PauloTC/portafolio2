@@ -26,7 +26,7 @@
                 span.decoration_lines
                 i.icon-heart
                 span.decoration_lines
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniamquis nostrud exercitation ullamco laboris nisi ut aliquip.
+            p Me gusta comprometerme con los proyectos con los que trabajo, investigar sobre posibles mejoras para poder encaminar nuestro proyecto hacia el éxito. Aportar todo mi conocimiento para poder lograr el objetivo en común.
             ul.work_options
                 love-work(v-for="(work, index) in LoveWorks"  :key="index"  :work="work" )
         .do_container.section_container( style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
@@ -168,25 +168,25 @@ export default {
                     name: "A tiempo",
                     img:"https://i.ibb.co/7X3sjyt/time.png",
                     width: 100,
-                    description: " El valor de la puntualidad es la disciplina de estar a tiempo para cumplir."
+                    description: " El valor de la puntualidad es muy importante a la entrega de un proyecto."
                 },
                 {
                     name: "Revisiones ilimitadas",
                     img:"https://i.ibb.co/8czGMJf/infinity.png",
                     width: 120,
-                    description: "La calidad es lo mas importante en un proyecto."
+                    description: "La calidad es lo mas importante, es necesario hacer todas las revisiones que sean necesarias."
                 },
                 {
                     name: "Cuidado En Detalles",
                     img:"https://i.ibb.co/0tkCPKz/retina.png",
                     width: 80,
-                    description: "Cuidar los detalles en los proyectos marca la diferencia.."
+                    description: "Cuidar los detalles en los proyectos marca una gran diferencia."
                 },
                 {
                     name: "Apoyo Constante",
                     img:"https://i.ibb.co/hFy5S6j/chat.png",
                     width: 80,
-                    description: " Si tiene alguna duda o alguna mejora en el proyecto."
+                    description: " Si tiene alguna duda o alguna mejora en el proyecto, soy todo oidos ! ."
                 }
             ],
             Works: [
