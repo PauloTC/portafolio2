@@ -84,7 +84,7 @@
                     //-     span Stack: 
                     //-     p {{ experience.stack }}
             .experience-laptop
-                img( src="~/assets/img/laptop.png"  alt="laptop" )
+                img( src="http://tinyimg.io/i/USmboMP.png"  alt="laptop" )
         .clients_container.section_container
             h3.general_title    Qué Dicen Mis Clientes
             .g_separator
