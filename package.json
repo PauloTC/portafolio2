@@ -1,0 +1,24 @@
+{
+  "name": "v_portfolio",
+  "version": "1.0.0",
+  "description": "My amazing Nuxt.js project",
+  "author": "@pauloT",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "cross-env HOST=0.0.0.0 PORT=3000 nuxt",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0"
+  }
+}
