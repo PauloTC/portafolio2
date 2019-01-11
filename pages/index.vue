@@ -116,11 +116,11 @@
                     button(  type="submit" onclick="alert('Hello world!')" ) Enviar Mensaje
             ul.contact_info
                 li
-                    img( src="~/assets/img/email.png"  alt="mail" )
+                    img( src="http://tinyimg.io/i/A0Z6cMu.png"  alt="mail" )
                     span info
                     p info@cocostudio.com
                 li
-                    img( src="~/assets/img/location.png"  alt="location" )
+                    img( src="http://tinyimg.io/i/JpWvJOC.png"  alt="location" )
                     span ADDRESS
                     p Pasuruan Indonesia 654321
                 li
@@ -128,7 +128,7 @@
                     span phone
                     p +62 - 0343 - 1234567
                 li
-                    img( src="~/assets/img/world.png"  alt="world" )
+                    img( src="http://tinyimg.io/i/wu33gik.png"  alt="world" )
                     span Website
                     p www.cocostudio.com
         .social_container
