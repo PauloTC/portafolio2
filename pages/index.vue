@@ -16,7 +16,7 @@
                     span UIX Designer.  <br/> 
                     | Me encanta hacer deporte, leer, y pilotar drones. Autodidacta 100%.
                 .button-container
-                    button.g-button( v-scroll-to="'#contact_container'"  ) Contáctame
+                    a.g-button( v-scroll-to="'#contact_container'"  href="#") Contáctame
                     a.g-button.rounded(href="#") Descarga mi CV
         .portfolio_container
             li(v-for="logo in LogoWorks")
@@ -60,7 +60,7 @@
                         img( :src="work.img" width=150 )
                         figcaption {{ index + 1 }}
                     h4.process_name(style="background-image: url('https://i.ibb.co/zRn6jr6/layer.png')") {{ work.title }}
-            button( v-scroll-to="'#contact_container'")  COMO PUEDO AYUDARTE ?
+            a( v-scroll-to="'#contact_container'" href="#")  COMO PUEDO AYUDARTE ?
         .experience_container.section_container( style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
             div.experience_list(v-for=" history in Histories "  :class="history.type" )
                 span.exprience_icon
