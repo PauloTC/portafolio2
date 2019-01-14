@@ -1,7 +1,7 @@
 {
-  "name": "v_portfolio",
+  "name": "Portafolio",
   "version": "1.0.0",
-  "description": "My amazing Nuxt.js project",
+  "description": "Mi portafolio Desarrollado con Nuxt",
   "author": "@pauloT",
   "private": true,
   "scripts": {
@@ -12,7 +12,8 @@
     "deploy": "gh-pages --dist --dotfiles=true"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",

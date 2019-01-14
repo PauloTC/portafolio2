@@ -14,19 +14,19 @@
                     span Desarrollo Web 
                     | y 
                     span UIX Designer.  <br/> 
-                    | Me encanta hacer deporte, leer y aprender de forma autodidacta.
+                    | Me encanta hacer deporte, leer, y pilotar drones. Autodidacta 100%.
                 .button-container
-                    a.g-button(href="#") Contáctame
+                    a.g-button( v-scroll-to="'#contact_container'"  href="#") Contáctame
                     a.g-button.rounded(href="#") Descarga mi CV
         .portfolio_container
-            li(v-for="work in 4")
+            li(v-for="logo in LogoWorks")
         .work_container.section_container
             h3.general_title   Por Qué Amarás Mi Trabajo
             .g_separator
                 span.decoration_lines
                 i.icon-heart
                 span.decoration_lines
-            p Me gusta comprometerme con los proyectos con los que trabajo, investigar sobre posibles mejoras para poder encaminar nuestro proyecto hacia el éxito. Aportar todo mi conocimiento para poder lograr el objetivo en común.
+            p Me gusta comprometerme con los proyectos con los que trabajo, investigar sobre diseños posibles mejoras para poder encaminar su proyecto hacia el éxito. Aportar todo mi conocimiento para poder lograr el objetivo en común.
             ul.work_options
                 love-work(v-for="(work, index) in LoveWorks"  :key="index"  :work="work" )
         .do_container.section_container( style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
@@ -35,14 +35,14 @@
                 span.decoration_lines.green
                 i.icon-code.purple_icon
                 span.decoration_lines.green
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniamquis nostrud exercitation ullamco laboris nisi ut aliquip.
+            p Puedes contratar mis servicios de desarrollo web o diseño web. Ideal para emprendedores que tienen poco tiempo y necesitan resolver el problema de su sitio web o crearlo desde cero de forma personalizada.
             ul.skills_container
                 li.skill_item(v-for=" work in Works")
                     figure
                         img( :src="work.img" )
                     .skill_info
                         h3 {{ work.title }}
-                        p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                        p {{ work.description }}
                         div.skill_container
                             span(v-for="skill in work.skills"  :style="{ 'border-color':  '#' + skill.color }" )
                                 p( :style="{ width: skill.width + '%' , background: '#' + skill.color } ") {{ skill.name }}
@@ -53,14 +53,14 @@
                 span.decoration_lines
                 i.icon-laptop.yellow_icon
                 span.decoration_lines
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniamquis nostrud exercitation ullamco laboris nisi ut aliquip.
+            p Es importante seguir un proceso adecuado al momento de desarrollar una web. A lo largo de este tiempo aprendido a que dividir un proyecto en pequeñas tareas ayuda a estimar mejor los tiempos para cada una de ellas. ¡Divide y vencerás! 
             ul.process_work
                 li(v-for="(work, index) in HowWorks")
                     figure
                         img( :src="work.img" width=150 )
                         figcaption {{ index + 1 }}
                     h4.process_name(style="background-image: url('https://i.ibb.co/zRn6jr6/layer.png')") {{ work.title }}
-            a(href="#")  COMO PUEDO AYUDARTE ?
+            a( v-scroll-to="'#contact_container'" href="#")  COMO PUEDO AYUDARTE ?
         .experience_container.section_container( style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
             div.experience_list(v-for=" history in Histories "  :class="history.type" )
                 span.exprience_icon
@@ -91,7 +91,7 @@
                 span.decoration_lines
                 i.icon-commenting.green_icon
                 span.decoration_lines
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniamquis nostrud exercitation ullamco laboris nisi ut aliquip.
+            p Me esfuerzo en cada proyecto para cumplir con las expectativas de mis clientes, y sus comentarios positivos son solo la recompensa al trabajo realizado.
             ul.client_list
                 li.client_user( v-for="client in clients" )
                     .client_coment
@@ -99,54 +99,54 @@
                         span {{ client.name }},
                             a(  :href="client.website" )  {{ client.industry }}
                     figure.client_image( style=" background-image: url('http://tinyimg.io/i/xXGHDqG.jpg')" )
-        .contact_container.section_container( style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
+        .contact_container.section_container(  id="contact_container" style=" background-image: url('https://i.ibb.co/3WjdfvV/background.png')" )
             h3.general_title.purple    Ponte En Contacto
             .g_separator
                 span.decoration_lines.purple
                 i.icon-paper-plane.yellow_icon
                 span.decoration_lines.purple
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniamquis nostrud exercitation ullamco laboris nisi ut aliquip.
-            v-form.contact_form
+            p ¿Alguna idea para salvar al mundo? Soy todo oídos.
+            form.contact_form
                 .form-left-side
                     input(placeholder="Nombre completo" type="text" )
                     input(placeholder="Direccion de E-mail" type="email" )
                 textarea(rows="4" cols="50" placeholder="Mensaje")
                 .form-right-side
                     input(placeholder=" Sitio Web ")
-                    button(  type="submit" onclick="alert('Hello world!')" ) Enviar Mensaje
+                    button(  type="submit" ) Enviar Mensaje
             ul.contact_info
                 li
                     img( src="http://tinyimg.io/i/A0Z6cMu.png"  alt="mail" )
                     span info
-                    p info@cocostudio.com
+                    p paulotejada.123a@gmail.com
                 li
                     img( src="http://tinyimg.io/i/JpWvJOC.png"  alt="location" )
-                    span ADDRESS
-                    p Pasuruan Indonesia 654321
+                    span Direccion
+                    p Villa El Salvador, Mz.D lt.43
                 li
                     img( src="~/assets/img/mobile.png"  alt="mobile" )
-                    span phone
-                    p +62 - 0343 - 1234567
+                    span Telefono
+                    p (+51) 945-583090
                 li
                     img( src="http://tinyimg.io/i/wu33gik.png"  alt="world" )
-                    span Website
-                    p www.cocostudio.com
+                    span Sitio Web
+                    a( href="https://github.com/PauloTC/portafolio" ) www.portafolio.com
         .social_container
             ul
                 li
-                    a(href="")
+                    a(target="_blank" href="https://twitter.com/")
                         i.icon-twitter
                 li
-                    a(href="")
+                    a(  target="_blank" href="https://www.facebook.com/paulo.tejada.7")
                         i.icon-facebook
                 li
-                    a(href="")
+                    a(target="_blank" href="https://plus.google.com/u/0/112771440529948303267?tab=mX")
                         i.icon-gplus
                 li
-                    a(href="")
+                    a(target="_blank" href="https://www.linkedin.com/in/paulotejadacasas/")
                         i.icon-linkedin
                 li
-                    a(href="")
+                    a(target="_blank" href="https://www.instagram.com/nosoypaulo/")
                         i.icon-instagrem
 </template>
 <script>
@@ -157,6 +157,20 @@ export default {
   },
   data() {
         return{
+            LogoWorks:[
+                {
+                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                },
+                {
+                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                },
+                {
+                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                },
+                {
+                    img: "http://tinyimg.io/i/Lc1NNkM.jpg"
+                }
+            ],
             LoveWorks: [
                 {
                     name: "Muchas variaciones",
@@ -193,7 +207,7 @@ export default {
                 {
                     title: "Desarrollo De Sitios Web",
                     price: 99,
-                    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+                    description: "Si cuentas con el diseño web de tu emprendimiento ya establecido, puedes contratar mis servicios como desarrollador web. Utilizando tecnologías acordes a la escalabilidad del proyecto, buscaremos darte a conocer en la web. Aquí menciono algunas de ellas .",
                     skills: [
                         {
                             name: "HTML / CSS3",
@@ -201,18 +215,18 @@ export default {
                             color: "f1b533"
                         },
                         {
-                            name: "Joomla",
-                            width: 75,
+                            name: "Javascript",
+                            width: 80,
                             color: "eb9933"
                         },
                         {
-                            name: "Javascript",
-                            width: 90,
+                            name: "Vue",
+                            width: 85,
                             color: "e17f36"
                         },
                         {
-                            name: "Wordpress",
-                            width: 65,
+                            name: "JQuery",
+                            width: 90,
                             color: "d56130"
                         }
                     ],
@@ -249,7 +263,7 @@ export default {
                 {
                     title: "Diseño De Sitios Web",
                     price: 99,
-                    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+                    description: "Te propongo que descubramos juntos la identidad de tu emprendimiento o proyecto para entender la historia que quieres contar. Te voy a hacer propuestas de diseño basadas en lo que investigue de tu proyecto y vas a elegir la que más te guste. La vamos a adaptar y modificar hasta llegar al resultado exacto que vienes buscando.",
                     skills: [
                         {
                             name: "Photoshop",
@@ -278,23 +292,23 @@ export default {
             HowWorks: [
                 {
                     img: "https://i.ibb.co/9VTSML3/sketching.png",
-                    title: "Sketching"
+                    title: "Dibujo"
                 },
                 {
                     img: "https://i.ibb.co/wNsy2B3/designing.png",
-                    title: "Designing"
+                    title: "Diseño"
                 },
                 {
                     img: "https://i.ibb.co/fCvVjMX/developing.png",
-                    title: "Developing"
+                    title: "Desarrollo"
                 },
                 {
                     img: "https://i.ibb.co/HxwPRMx/testing.png",
-                    title: "Testing"
+                    title: "Testeo"
                 },
                 {
                     img: "https://i.ibb.co/Y2Kz78T/sending.png",
-                    title: "Sending"
+                    title: "Envio"
                 },
             ],
             Histories:[
@@ -416,14 +430,16 @@ export default {
                     img: "http://tinyimg.io/i/xXGHDqG.jpg"
                 },
                 {
-                    description: "Me había entregado el mejor trabajo que podría haber esperado con un proyecto complejo de desarrollo web en las últimas tecnologías, me aseguraré de contratar a su equipo y mantener la colaboración para futuros proyectos.",
+                    description: "Todo muy bien.. el trabajo quedo perfecto. Estamos muy satisfechos. Seguro seguiremos trabajando con él.",
                     name: "StaffCreativa",
                     website: "https://www.britanico.edu.pe/",
                     industry: 'Britanico',
-                    mg: "http://tinyimg.io/i/xXGHDqG.jpg"
+                    mg: "http://tinyimg.io/i/ALPq76x.jpg"
                 }
             ]
         }
+  },
+  methods: {
   }
 }
 </script>

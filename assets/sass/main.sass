@@ -100,11 +100,21 @@ li
     flex-wrap: wrap
     li
         width: 25%
-        background: #787878
         min-height: 295px
         list-style: none
-        &:nth-child(odd)
-                background: #e3e2e2     
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        // &:nth-child(odd)
+        //         background: #e3e2e2    http://tinyimg.io/i/ZSKeazU.jpg 
+        &:first-child
+                 background-image: url('http://tinyimg.io/i/0w3bp5P.jpg')
+        &:nth-child(2)
+                background-image: url('http://tinyimg.io/i/T0j8gIy.png')
+        &:nth-child(3)
+                background-image: url('http://tinyimg.io/i/ZSKeazU.jpg')
+        &:nth-child(4)
+                background-image: url('http://tinyimg.io/i/57gNNvN.jpg')
 .general_title
     color: #fff
     font-size: 22px
@@ -645,6 +655,9 @@ li
         a
             text-decoration: none
             color: #1abc9c
+    &:nth-child(2)
+            .client_image
+                background-image: url('http://tinyimg.io/i/ymWE4L1.png')  !important
     &:nth-child(even)
             padding-left: 20px
             flex-direction: row-reverse
@@ -703,6 +716,7 @@ li
         background: none
         background: #f8c740
         color: #fff
+        border: none
         font-size: 14px
         font-weight: 700
         border: none
@@ -768,6 +782,14 @@ li
                 color: #21ac97
     li
         margin: 0 30px
+.contact_container
+    a
+        text-decoration: none
+        font-family: 'Open Sans'
+        color: inherit
+        font-size: 13px
+        margin-top: 10px
+        display: block
 @media (max-width: 1024px)
     .triangle_decoration:after,
     .triangle_decoration:before
@@ -778,6 +800,8 @@ li
         transform: rotate(188deg)
     .experience_container
         padding-top: 230px
+    .portfolio_container li
+        width: 50%
 @media (max-width: 960px)
     .experience_card,
     .experience_item-container:nth-child(even) .experience_card
@@ -882,6 +906,8 @@ li
     .social_container
         height: 200px
 @media (max-width: 560px)
+        .portfolio_container li
+            width: 100%
         .process_work li
             width: 50%
         .process_work figure,
