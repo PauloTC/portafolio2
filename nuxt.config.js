@@ -20,9 +20,9 @@ module.exports = {
     ]
   },
   //gh-pages - Base URL
-  router: {
-    base: '/vuejs-2-series/'
-  },
+  // router: {
+  //   base: '/vuejs-2-series/'
+  // },
   /*
   ** Customize the progress-bar color
   */
