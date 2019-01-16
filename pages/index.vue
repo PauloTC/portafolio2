@@ -53,7 +53,7 @@
                 span.decoration_lines
                 i.icon-laptop.yellow_icon
                 span.decoration_lines
-            p Es importante seguir un proceso adecuado al momento de desarrollar una web. A lo largo de este tiempo aprendido a que dividir un proyecto en pequeñas tareas ayuda a estimar mejor los tiempos para cada una de ellas. ¡Divide y vencerás! 
+            p Es importante seguir un proceso adecuado al momento de desarrollar una web. A lo largo de este tiempo he aprendido que dividir un proyecto en pequeñas tareas ayuda a estimar mejor los tiempos para cada una de ellas. ¡Divide y vencerás! 
             ul.process_work
                 li(v-for="(work, index) in HowWorks")
                     figure
@@ -121,11 +121,11 @@
                     p paulotejada.123a@gmail.com
                 li
                     img( src="http://tinyimg.io/i/JpWvJOC.png"  alt="location" )
-                    span Direccion
+                    span DIRECCIÓN
                     p Villa El Salvador, Mz.D lt.43
                 li
                     img( src="~/assets/img/mobile.png"  alt="mobile" )
-                    span Telefono
+                    span TELÉFONO
                     p (+51) 945-583090
                 li
                     img( src="http://tinyimg.io/i/wu33gik.png"  alt="world" )
@@ -188,7 +188,7 @@ export default {
                     name: "Revisiones ilimitadas",
                     img:"https://i.ibb.co/8czGMJf/infinity.png",
                     width: 120,
-                    description: "La calidad es lo mas importante, es necesario hacer todas las revisiones que sean necesarias."
+                    description: "La calidad es lo más importante, es necesario hacer todas las revisiones que sean necesarias."
                 },
                 {
                     name: "Cuidado En Detalles",
@@ -335,7 +335,7 @@ export default {
                     position: "Frontend Development",
                     start: 2018,
                     end: 2018,
-                    description: "Desarrollando aplicaciones web utilizando VueJs + Pug + Sass. Con librerias como Element, Vuetify, Vuelidate, Nuxt.",
+                    description: "Desarrollando aplicaciones web utilizando VueJs + Pug + Sass. Con librerías como Element, Vuetify, Vuelidate, Nuxt.",
                     stack: "Vue + Pug + Sass",
                     type: "work"
                 },
@@ -344,7 +344,7 @@ export default {
                     position: "Frontend Development",
                     start: 2016,
                     end: 2018,
-                    description: "Desarollo de sitios web dinámicos utilizando JQuery + HTML + Stylus. Utilizando lobrerias como OwlCarrousel, LightBox, etc.",
+                    description: "Desarollo de sitios web dinámicos utilizando JQuery + HTML + Stylus. Utilizando  librerías como OwlCarrousel, LightBox, etc.",
                     stack: "Jquery + Html + Stylus",
                     type: "work"
                 },
@@ -353,7 +353,7 @@ export default {
                     position: "Frontend Development",
                     start: 2015,
                     end: 2019,
-                    description: "Como desarrollador apasionado siempre estoy en busca de nuevos proyectos. Utilizando las tecnologias antes mencionadas.",
+                    description: "Como desarrollador apasionado siempre estoy en busca de nuevos proyectos. Utilizando las tecnologías antes mencionadas.",
                     stack: "Jquery + Html + Stylus + Drupal 7",
                     type: "work"
                 },
